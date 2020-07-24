@@ -164,15 +164,15 @@ class PcoControlSection(QWidget):
 
 
         # ----------------------------------------------------------------------
-        # Master layout
+        # Main layout
 
-        masterLayout = QVBoxLayout()
-        masterLayout.addWidget(noteGroup)
+        mainLayout = QVBoxLayout()
+        mainLayout.addWidget(noteGroup)
 
         doublePanelLayout = QHBoxLayout()
         doublePanelContainer = QWidget(self)
         doublePanelContainer.setLayout(doublePanelLayout)
-        masterLayout.addWidget(doublePanelContainer)
+        mainLayout.addWidget(doublePanelContainer)
 
         leftLayout      = QVBoxLayout()
         rightLayout     = QVBoxLayout()
@@ -189,7 +189,7 @@ class PcoControlSection(QWidget):
         rightLayout.addWidget(vibratoGroup)
         rightLayout.addWidget(pwmGroup)
 
-        self.setLayout(masterLayout)
+        self.setLayout(mainLayout)
 
 # ------------------------------------------------------------------------------
 
